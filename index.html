@@ -1939,7 +1939,7 @@
       const nav = activeNav();
       const currentNavName = $("#currentNavName");
       if (currentNavName) currentNavName.textContent = nav.name;
-      document.title = `${nav.name} | 云猫导航`;
+      document.title = "云猫导航";
       document.body.dataset.activeNav = nav.id;
       syncWarpAnimation();
       $$(".segmented button").forEach(button => button.classList.toggle("active", button.dataset.mode === state.searchMode));
